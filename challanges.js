@@ -48,9 +48,11 @@ function multiply(p1,p2){
 var calc1 = prompt("Enter 1st number");
 var oprtr = prompt("Enter operator: either +, -, * or /")
 var calc2 = prompt("Enter 2nd number");
+var x = parseInt(calc1);
+var y = parseInt(calc2)
 
 if(oprtr === '+'){
-    console.log(`${calc1} ${oprtr} ${calc2} = ${add(calc1,calc2)}`);
+    console.log(`${calc1} ${oprtr} ${calc2} = ${add(x,y)}`);
 }
 else if(oprtr === '-'){
     console.log(`${calc1} ${oprtr} ${calc2} = ${subtract(calc1,calc2)}`);
